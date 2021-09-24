@@ -1,0 +1,31 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:26890",
+      "sslPort": 44339
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "logApi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "USER": "mvc",
+        "SERVER": "host.docker.internal\\MSSQLSERVER_19",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "PASSWORD": "Winter*123"
+      },
+      "dotnetRunMessages": "true",
+      "applicationUrl": "http://localhost:5050"
+    }
+  }
+}
