@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\logCore\logCore.csproj" />
     <ProjectReference Include="..\logInfrastructure\logInfrastructure.csproj" />
+    <ProjectReference Include="..\logShared\logShared.csproj" />
   </ItemGroup>
 
 </Project>
