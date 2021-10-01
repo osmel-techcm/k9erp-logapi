@@ -1,4 +1,5 @@
 using logInfrastructure.Data;
+using logShared;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,6 +37,7 @@ namespace logApi
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddDependencies(Configuration);
+            services.AddDependenciesShared(Configuration);
 
             services.AddCors(options => options.AddPolicy("CorsPolicy",
             builder =>
